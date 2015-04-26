@@ -49,15 +49,15 @@ class LinkedList
 		int length();
 		void UpdateRear();
 		void Swap(node<AlpoType> * a, node<AlpoType> * b);
-		void addInOrder(AlpoType item);										// used in insertionSort
+		void addInOrder(AlpoType item);						// used in insertionSort
 		void updateShell(node<AlpoType> * leftiterator, int sortingCount);	// used in shellSort
-		node<AlpoType> * findMinNode(node<AlpoType> * startpoint);			// used in selectionSort
+		node<AlpoType> * findMinNode(node<AlpoType> * startpoint);		// used in selectionSort
 		void merge(node<AlpoType> * lefthead, node<AlpoType> * righthead);	// used in mergeSort
 
 	public:
-		LinkedList();														// Default Constructor
-		LinkedList(const LinkedList & list);								// Deep Copy Constructor
-		~LinkedList();														// Destructor
+		LinkedList();								// Default Constructor
+		LinkedList(const LinkedList & list);					// Deep Copy Constructor
+		~LinkedList();								// Destructor
 		void Clear();
 		void Print();
 		void addToBeginning(AlpoType item);
